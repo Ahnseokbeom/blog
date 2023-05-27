@@ -15,6 +15,7 @@ name: 'AboutMe'
     width: 100%;
     height: 40%;
     background: aqua;
+    left : 0%;
     top: 20%;
     position: fixed;
 }

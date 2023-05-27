@@ -1,11 +1,11 @@
 <template>
     <div class="header">
-        header
+            seokbeom
     </div>
 </template>  
 <script>
 export default {
-name: 'HeaDer'
+name: 'Header'
 }
 </script>
   
@@ -15,8 +15,10 @@ name: 'HeaDer'
     width: 100%;
     height: 5%;
     background: aqua;
+    left : 0%;
     top: 0%;
-    position: fixed;
+    position:fixed;
+    float:center;
 }
 </style>
   

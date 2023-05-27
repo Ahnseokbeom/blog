@@ -1,5 +1,6 @@
 <template>
   <Header />
+  <Menu />
   <AboutMe />
   <Skill />
   <Footer />
@@ -9,12 +10,14 @@
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import AboutMe from './components/AboutMe.vue'
+import Menu from './components/Menu.vue'
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
     AboutMe,
+    Menu
   }
 }
 </script>

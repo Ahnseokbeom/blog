@@ -15,6 +15,7 @@ name: 'Skill'
     width: 100%;
     height: 60%;
     background: aqua;
+    left : 0%;
     top: 20%;
     position: fixed;
 }
