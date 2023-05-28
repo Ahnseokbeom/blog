@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="left">
-            SeokBeom's PPT
+            SeokBeom Portfolio
         </div>
         <div class="right">
             <table>
@@ -30,13 +30,15 @@ tr{
 .header {
     width: 100%;
     height: 10%;
-    background: yellow;
     left : 0%;
     top: 0%;
     position: absolute;
 }
 .left{
+    margin-top: 1%;
+    margin-left: 3%;
     float: left;
+    font-size: 150%;
 }
 .right{
     float: right;

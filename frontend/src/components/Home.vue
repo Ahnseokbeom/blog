@@ -10,7 +10,7 @@
 <script>
 import Header from '../views/Header.vue'
 import Footer from '../views/Footer.vue'
-import Skill from '../views/Skill.vue'
+import Skill from '../views/content.vue'
 export default{
     name : 'Home',
     components :{
