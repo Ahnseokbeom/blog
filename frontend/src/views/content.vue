@@ -1,5 +1,5 @@
 <template>
-    <div class="all">
+    <div class="app">
     <div class="home">home<hr style="border:solid 1% gray"></div>
     <div class="about">about<hr style="border:solid 1% gray"></div>
     <div class="education">education<hr style="border:solid 1% gray"></div>
@@ -18,15 +18,15 @@ export default {
 name: 'Skill'
 }
 </script>
-  
+
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+.app{
+    font-family: 'Jua',sans-serif;
+}
 div {
     margin-top: 10%;
-}
-.all{
-    width: 100%;
-    height: 200%;
 }
 .skill {
     width: 100%;

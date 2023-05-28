@@ -1,4 +1,5 @@
 <template>
+    <div class="app">
     <div class="header">
         <div class="left">
             SeokBeom Portfolio
@@ -14,9 +15,9 @@
             </table>
         </div>
     </div>
+</div>
 </template>  
 <script>
-import 'primeicons/primeicons.css';
 export default {
 name: 'header'
 }
@@ -24,28 +25,32 @@ name: 'header'
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-tr{
-    font-size: 3vh;
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+.app{
+    font-family: 'Jua',sans-serif;
+}
+td{
+    font-size: 130%;
 }
 .header {
-    width: 100%;
+    width: 95%;
     height: 10%;
     left : 0%;
     top: 0%;
-    position: absolute;
+    position: fixed;
 }
 .left{
     margin-top: 1%;
     margin-left: 3%;
     float: left;
-    font-size: 150%;
+    font-size: 170%;
 }
 .right{
     float: right;
 }
-.right table tr{
-    padding-top: 20vh;
-    padding-left: 25vh;
+.right table td{
+    padding-top: 1.5vh;
+    padding-left: 5vw;
 }
 </style>
 
