@@ -1,24 +1,23 @@
 <template>
-    <div class="header">
-            seokbeom
+    <div class="footer">
+        2023. SeokBeom Ahn 
     </div>
 </template>  
 <script>
 export default {
-name: 'Header'
+name: 'Footer'
 }
 </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.header {
+.footer {
     width: 100%;
     height: 5%;
     background: aqua;
     left : 0%;
-    top: 0%;
-    position:fixed;
-    float:center;
+    bottom: 0%;
+    position: fixed;
 }
 </style>
   
