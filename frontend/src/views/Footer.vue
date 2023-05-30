@@ -5,7 +5,7 @@
 </template>  
 <script>
 export default {
-name: 'Footer'
+name: 'footer'
 }
 </script>
   
@@ -20,5 +20,6 @@ name: 'Footer'
     bottom: 0%;
     position: fixed;
 }
+
 </style>
   
