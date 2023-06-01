@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <span class="bottom"><a href="https://github.com/ahnseokbeom" target="blank"><icon type="mdi" :path="github" color="black"></icon></a></span><br />
-        {{today}}. SeokBeom Ahn 
+        {{today}}. SeokBeom All Rights Reserved
     </div>
 </template>  
 <script>

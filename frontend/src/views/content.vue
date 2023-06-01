@@ -2,21 +2,11 @@
     <div class="app">
     <div class="title">
         <div class="title2"> 
-             안녕하세요 개발자 안석범입니다.
+             <span>안녕하세요 개발자 안석범입니다.</span>
              <hr style="border: solid 1% black; width: 5%;">
         </div>    
         <hr style="border:solid 1% gray"></div>
-    <div class="title">About Me<br />
-        <div class="left" style="width: 20%;">
-            <tr><img src="@/img/photo.jpeg" /></tr>
-        </div>
-        <div class="left">
-            <tr><span><icon type="mdi" :path="account"></icon> 이름 : 안석범</span></tr>
-            <tr><span><icon type="mdi" :path="calendar"></icon> 생년월일 : 98.03.12</span></tr>
-            <tr><span><icon type="mdi" :path="phone"></icon> 010-2374-0312</span></tr>
-            <tr><span><icon type="mdi" :path="email"></icon> seokbeom0312@gmail.com</span></tr>
-        </div>
-    <hr style="border:solid 1% gray"></div>
+        <div class="title">Contact<hr style="border:solid 1% gray"></div>
     <div class="title">Education<br />
         <div class="left" style="width: 20%;">
             <tr><img src="@/img/photo.jpeg" /></tr>
@@ -35,7 +25,17 @@
         <hr style="border:solid 1% gray">
     </div>
     <div class="title">Archiving<hr style="border:solid 1% gray"></div>
-    <div class="title">Contact<hr style="border:solid 1% gray"></div>
+    <div class="title">About Me<br />
+        <div class="left" style="width: 20%;">
+            <tr><img src="@/img/photo.jpeg" /></tr>
+        </div>
+        <div class="left">
+            <tr><span><icon type="mdi" :path="account"></icon> 이름 : 안석범</span></tr>
+            <tr><span><icon type="mdi" :path="calendar"></icon> 생년월일 : 98.03.12</span></tr>
+            <tr><span><icon type="mdi" :path="phone"></icon> 010-2374-0312</span></tr>
+            <tr><span><icon type="mdi" :path="email"></icon> seokbeom0312@gmail.com</span></tr>
+        </div>
+    <hr style="border:solid 1% gray"></div>
 </div>
 </template>  
 <script>
@@ -63,12 +63,16 @@ components: {Icon},
     font-family: 'Jua',sans-serif;
 }
 .title2{
-    margin-top: 10%;
+    top: 10%;
     margin-left: 30%;
-    width: 50vw;
-    height: 40vh;
-    background-image: url('@/img/home.jpeg');
+    width: 40vw;
+    height: 50vh;
+    background-image: url('@/img/home2.jpeg');
     background-repeat: no-repeat;
+}
+.title2 span{
+    margin: auto;
+    font-size: 1.5vw;
 }
 img {
     width: 60%;
@@ -81,7 +85,7 @@ img {
 .right{
     float: right;
 }
-span{
+tr span{
     margin : 2vw 0 0 20vw;
     font-size: 1.3vw;
     float: left;

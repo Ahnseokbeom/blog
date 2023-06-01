@@ -35,6 +35,7 @@ td{
 td:hover {
     cursor: pointer;
     text-decoration: underline;   
+    opacity: 80%;
 }
 .header {
     width: 95%;
