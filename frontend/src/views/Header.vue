@@ -12,7 +12,7 @@
                 <td>Skill</td>
                 <td>Archiving</td>
                 <td>Contact</td>
-            </table>
+            </table>       
         </div>
     </div>
 </div>
@@ -32,12 +32,17 @@ name: 'header'
 td{
     font-size: 130%;
 }
+td:hover {
+    cursor: pointer;
+    text-decoration: underline;   
+}
 .header {
     width: 95%;
     height: 10%;
     left : 0%;
     top: 0%;
     position: fixed;
+    background: white;
 }
 .left{
     margin-top: 1%;
