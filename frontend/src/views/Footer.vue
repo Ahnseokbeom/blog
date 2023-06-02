@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
-        <span class="bottom"><a href="https://github.com/ahnseokbeom" target="blank"><icon type="mdi" :path="github" color="black"></icon></a></span><br />
-        {{today}}. SeokBeom All Rights Reserved
+        <span><a href="https://github.com/ahnseokbeom" target="blank"><icon type="mdi" :path="github" color="white"></icon></a></span>
+        <span>{{today}}. SeokBeom All Rights Reserved</span>
     </div>
 </template>  
 <script>
@@ -25,11 +25,14 @@ components : {Icon},
 
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Jua',sans-serif;
     width: 100%;
-    height: 10%;
-    left : 0%;
-    bottom: 0%;
+    background: #C38154;
+    color:white;
+    height: 8vh;
 }
 a{
     color : none;

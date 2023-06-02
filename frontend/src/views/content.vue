@@ -1,41 +1,38 @@
 <template>
     <div class="app">
-    <div class="title">
-        <div class="title2"> 
-             <span>안녕하세요 개발자 안석범입니다.</span>
-             <hr style="border: solid 1% black; width: 5%;">
-        </div>    
-        <hr style="border:solid 1% gray"></div>
-        <div class="title">Contact<hr style="border:solid 1% gray"></div>
-    <div class="title">Education<br />
-        <div class="left" style="width: 20%;">
-            <tr><img src="@/img/photo.jpeg" /></tr>
+    <div class="banner" style="opacity: 95%;">
+        <div class="top">
+            <span>안녕하세요 개발자 안석범입니다</span>
+            <span>Welcome to My Portfolio</span>
         </div>
-        <div class="left">
-            <tr><span><icon type="mdi" :path="account"></icon> 이름 : 안석범</span></tr>
-            <tr><span><icon type="mdi" :path="calendar"></icon> 생년월일 : 98.03.12</span></tr>
-            <tr><span><icon type="mdi" :path="phone"></icon> 010-2374-0312</span></tr>
-            <tr><span><icon type="mdi" :path="email"></icon> seokbeom0312@gmail.com</span></tr>
-        </div>
-    <hr style="border:solid 1% gray"></div>
-    <div class="title">
-        Skill
-        <table>
-        </table>
-        <hr style="border:solid 1% gray">
+        <div class="menu"> 
+            <span class="nav">Contact Education Skill Archiving About</span>
     </div>
-    <div class="title">Archiving<hr style="border:solid 1% gray"></div>
-    <div class="title">About Me<br />
-        <div class="left" style="width: 20%;">
-            <tr><img src="@/img/photo.jpeg" /></tr>
-        </div>
+    </div>
+    <div class="title" style="background: #f9f9f9;"><span>Education</span><br/>
+        <div class="left"><img class="school" src="@/img/school.jpeg"></div>
+        <div class="right"><span class="content">
+            현재까지 삶 적기(예시 - 2023.02 성공회대학교 졸업)
+        </span> </div>
+    </div>
+    <div class="title"><span>Skill</span><br/>
+        <div class="left"><img class="school" src="@/img/school.jpeg"></div>
+    </div>
+    <div class="title"><span>Archiving</span><br/>
+        <div class="left"><img class="school" src="@/img/school.jpeg"></div>
+        <div class="right"><img class="school" src="@/img/school.jpeg"></div>
+    </div>
+    <div class="title"><span>Contact</span><br />
+        <!-- <div class="left" style="width: 20%;">
+            <tr><img class="photo" src="@/img/photo.jpeg" /></tr>
+        </div> -->
         <div class="left">
             <tr><span><icon type="mdi" :path="account"></icon> 이름 : 안석범</span></tr>
             <tr><span><icon type="mdi" :path="calendar"></icon> 생년월일 : 98.03.12</span></tr>
             <tr><span><icon type="mdi" :path="phone"></icon> 010-2374-0312</span></tr>
             <tr><span><icon type="mdi" :path="email"></icon> seokbeom0312@gmail.com</span></tr>
         </div>
-    <hr style="border:solid 1% gray"></div>
+    </div>
 </div>
 </template>  
 <script>
@@ -62,28 +59,57 @@ components: {Icon},
 .app{
     font-family: 'Jua',sans-serif;
 }
-.title2{
-    top: 10%;
-    margin-left: 30%;
-    width: 40vw;
-    height: 50vh;
-    background-image: url('@/img/home2.jpeg');
-    background-repeat: no-repeat;
-}
-.title2 span{
-    margin: auto;
-    font-size: 1.5vw;
-}
-img {
+.photo {
     width: 60%;
     height: 60%;
     margin-left: 23vw;
 }
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+    margin-top: -10%;
+    width: 100%;
+    height: 50vh;
+    background-image: url('@/img/banner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 200%;
+    opacity: 80%;
+}
+.menu{
+    position: absolute;
+    margin: -5% 0 -30% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    background: #FFC26F;
+    color: white;
+}
+.menu .nav{
+    font-size: 1.5vw;
+    word-spacing: 5em;
+}
 .left{
     float: left;
+    width: 50%;
 }
 .right{
     float: right;
+    width: 50%;
+}
+.right .content{
+    font-size: 1vw;
 }
 tr span{
     margin : 2vw 0 0 20vw;
@@ -91,10 +117,15 @@ tr span{
     float: left;
 }
 .title {
-    font-size: 2vw;
-    margin-top: 2%;
+    font-size: 3vw;
+    margin-top: 5%;
     width: 100%;
-    height: 100%;
+    height: 60vh;
+}
+.school{
+    margin-top: 5%;
+    width: 60%;
+    height: 40vh;
 }
 hr {
     margin-top: 2%;
