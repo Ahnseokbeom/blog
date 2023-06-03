@@ -6,18 +6,52 @@
             <span>Welcome to My Portfolio</span>
         </div>
         <div class="menu"> 
-            <span class="nav">Contact Education Skill Archiving About</span>
+            <span class="nav">About Contact Education Skill Archiving</span>
     </div>
     </div>
-    <div class="title"><span>Education</span><br/>
+    <div class="title"><span>About Me</span><br/></div>
+    <div class="archiving_title"><span>Archiving</span>  
+        <div class="archiving_container">
+        <div class="archiving_box">
+            <div class="archiving_box_title">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25657.png" height="40">
+        <span style="vertical-align: super; margin-left: 5%;">Github</span> </div>
+        <div class="archiving_box_content">
+            <a href="https://github.com/Ahnseokbeom" target="blank">github.com/Ahnseokbeom</a><br>소스 저장소입니다.
+            
+            <ul style="list-style-type: disc;">
+                <li>
+                    팀 프로젝트 / 개인 프로젝트
+                </li>
+                <li>
+                    교육과정 시 배운 수업의 소스코드
+                </li>
+                <li>
+                    코딩테스트 연습
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="archiving_box">
+            <div class="archiving_box_title">
+            <img src="https://cdn-icons-png.flaticon.com/512/3959/3959542.png" height="40">
+        <span style="vertical-align: super; margin-left: 5%; ">Portfolio</span> </div>
+        <div class="archiving_box_content">
+            <a href="https://github.com/Ahnseokbeom/blog" target="blank">Portfolio</a><br>포트폴리오용 웹사이트입니다.
+            <ul style="list-style-type: disc;">
+                <li>
+                    제 자신에 대해 소개해줍니다
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="title"><span>Education</span><br/>
         <div class="left"><img class="school" src="@/img/school.jpeg"></div>
         <div class="right"><span class="content">
             현재까지 삶 적기(예시 - 2023.02 성공회대학교 졸업)
         </span> </div>
-    </div>
-    <div class="title"><span>Archiving</span><br/>
-        <div class="left"><img class="school" src="@/img/school.jpeg"></div>
-        <div class="right"><img class="school" src="@/img/school.jpeg"></div>
     </div>
     <div class="title"><span>Contact</span><br />
         <!-- <div class="left" style="width: 20%;">
@@ -30,6 +64,7 @@
             <tr><span><icon type="mdi" :path="email"></icon> seokbeom0312@gmail.com</span></tr>
         </div>
     </div>
+    <a href="javascript:window.scrollTo(0,0);">Back to top</a>
     <div class="title"><span>Skill</span><br/>
         <div class="left"><img class="school" src="@/img/school.jpeg"></div>
     </div>
@@ -63,6 +98,58 @@ components: {Icon},
     width: 60%;
     height: 60%;
     margin-left: 23vw;
+}
+a {
+    text-decoration: none;
+}
+.archiving_title {
+    margin-top: 5%;
+    color: #C38154;
+    background: #F9E0BB37;
+    padding: 45px 0 30px 0;
+    font-weight: 200;
+    font-size: 3rem;
+    text-align: center;
+    word-break: kiip-all;
+    border-bottom: 0.01rem solid #fff;
+}
+.archiving_container{
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.archiving_box {
+    flex-shrink: 0;
+    width: 24rem;
+    padding: 1.5rem;
+    margin: 20px;
+    border-radius: 0.7rem;
+    background-color: #fff;
+    box-shadow: 1rem 1rem 1rem 0 rgb(255 255 255 / 20%);
+}
+.archiving_box_title{
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #56585C;
+}
+.archiving_box_content{
+    color : black;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.archiving_box_content li{
+    float: left;
+    list-style-position: inside;
+    text-indent: -20px;
+    padding-left: 20px;
 }
 .banner {
     display: flex;
@@ -117,12 +204,13 @@ tr span{
     float: left;
 }
 .title {
-    font-size: 3vw;
+    font-size: 3rem;
     margin-top: 5%;
     width: 100%;
     height: 60vh;
     color : #C38154;
     background: #F9E0BB37;
+    padding: 45px 0 30px 0;
 }
 .school{
     margin-top: 5%;
