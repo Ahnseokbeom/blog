@@ -9,14 +9,11 @@
             <span class="nav">Contact Education Skill Archiving About</span>
     </div>
     </div>
-    <div class="title" style="background: #f9f9f9;"><span>Education</span><br/>
+    <div class="title"><span>Education</span><br/>
         <div class="left"><img class="school" src="@/img/school.jpeg"></div>
         <div class="right"><span class="content">
             현재까지 삶 적기(예시 - 2023.02 성공회대학교 졸업)
         </span> </div>
-    </div>
-    <div class="title"><span>Skill</span><br/>
-        <div class="left"><img class="school" src="@/img/school.jpeg"></div>
     </div>
     <div class="title"><span>Archiving</span><br/>
         <div class="left"><img class="school" src="@/img/school.jpeg"></div>
@@ -32,6 +29,9 @@
             <tr><span><icon type="mdi" :path="phone"></icon> 010-2374-0312</span></tr>
             <tr><span><icon type="mdi" :path="email"></icon> seokbeom0312@gmail.com</span></tr>
         </div>
+    </div>
+    <div class="title"><span>Skill</span><br/>
+        <div class="left"><img class="school" src="@/img/school.jpeg"></div>
     </div>
 </div>
 </template>  
@@ -121,6 +121,8 @@ tr span{
     margin-top: 5%;
     width: 100%;
     height: 60vh;
+    color : #C38154;
+    background: #F9E0BB37;
 }
 .school{
     margin-top: 5%;
