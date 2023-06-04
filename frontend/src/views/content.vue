@@ -9,7 +9,40 @@
             <span class="nav">About Contact Education Skill Archiving</span>
     </div>
     </div>
-    <div class="title"><span>About Me</span><br/></div>
+    <div class="archiving_title"><span>About Me</span>  
+        <div class="archiving_container">
+        <div class="archiving_box">
+            <div class="archiving_box_title">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25657.png" height="40">
+        <span style="vertical-align: super; margin-left: 5%;">Github</span> </div>
+        <div class="archiving_box_content">
+            <a href="https://github.com/Ahnseokbeom" target="blank">github.com/Ahnseokbeom</a><br>소스 저장소입니다.
+            
+            <ul style="list-style-type: disc;">
+                <li>
+                    팀 프로젝트 / 개인 프로젝트
+                </li>
+                <li>
+                    교육과정 시 배운 수업의 소스코드
+                </li>
+                <li>
+                    코딩테스트 연습
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="archiving_box">
+            <div class="archiving_box_title">
+            <img src="https://cdn-icons-png.flaticon.com/512/3959/3959542.png" height="40">
+        <span style="vertical-align: super; margin-left: 5%; ">Portfolio</span> </div>
+        <div class="archiving_box_content">
+            <a href="https://github.com/Ahnseokbeom/blog" target="blank">Portfolio</a><br>포트폴리오용 웹사이트입니다.
+            <ul style="list-style-type: disc;">
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
     <div class="archiving_title"><span>Archiving</span>  
         <div class="archiving_container">
         <div class="archiving_box">
@@ -39,9 +72,6 @@
         <div class="archiving_box_content">
             <a href="https://github.com/Ahnseokbeom/blog" target="blank">Portfolio</a><br>포트폴리오용 웹사이트입니다.
             <ul style="list-style-type: disc;">
-                <li>
-                    제 자신에 대해 소개해줍니다
-                </li>
             </ul>
         </div>
     </div>
@@ -49,9 +79,22 @@
 </div>
 <div class="title"><span>Education</span><br/>
         <div class="left"><img class="school" src="@/img/school.jpeg"></div>
-        <div class="right"><span class="content">
-            현재까지 삶 적기(예시 - 2023.02 성공회대학교 졸업)
-        </span> </div>
+        <div class="right">
+            <div class="edutitle" style="background: none;">
+                금곡고등학교 졸업
+                <div class="educontent">
+                    미디어콘텐츠학과<br>
+                    2014.03 ~ 2017.02
+                </div>
+            </div>
+            <div class="edutitle" style="background: none;">
+                성공회대학교 졸업
+                <div class="educontent">
+                     디지털콘텐츠학과 / 소프트웨어학과(복수전공)<br>
+                    2017.03 ~ 2023.02
+                </div>
+            </div>
+        </div>
     </div>
     <div class="title"><span>Contact</span><br />
         <!-- <div class="left" style="width: 20%;">
@@ -195,8 +238,12 @@ a {
     float: right;
     width: 50%;
 }
-.right .content{
-    font-size: 1vw;
+.edutitle{
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+.educontent{
+    font-size: 1rem;
 }
 tr span{
     margin : 2vw 0 0 20vw;
