@@ -1,12 +1,8 @@
 <template>
     <div class="footer">
-        <div class="left">
+        <div>
         <span><a href="https://github.com/ahnseokbeom" target="blank"><icon type="mdi" :path="github" color="white"></icon></a></span>
         <span>{{today}}. SeokBeom All Rights Reserved</span>
-        </div>
-        <div class="right">
-            <icon type="mdi" :path="phone"></icon> 010-2374-0312<br>
-            <icon type="mdi" :path="email"></icon> seokbeom0312@gmail.com
         </div>
     </div>
 </template>  
@@ -47,13 +43,6 @@ components : {Icon},
 a{
     color : none;
     cursor: pointer;
-}
-.right{
-    margin-right: -40%;
-    float: right;
-}
-.left {
-    margin-right: 30%;
 }
 
 </style>
