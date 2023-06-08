@@ -1,12 +1,12 @@
 <template>
     <div class="app">     
-    <div class="banner" style="opacity: 95%;">
+    <!-- <div class="banner" style="opacity: 95%;">
         <div class="top">
             <span>안녕하세요 개발자 안석범입니다</span>
             <span>Welcome to My Portfolio</span>
         </div>
         
-    </div>
+    </div> -->
     <div class="col-sm-12">
         <div class="archiving_title"><span>About Me</span></div>
     </div>
@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="single_left">
-                        <img src="@/img/study.jpeg" style="max-width: 100%; width: 60%; height: 50%; margin-bottom: 5%;"/>
+                        <img src="@/img/reader.jpeg" style="max-width: 100%; width: 35vw; height: 35vh; margin-bottom: 5%;"/>
                     </div>
                 </div>
                 <div class="col-sm-5 col-sm-push-1" style="text-align: left; margin-top: 1%;">
@@ -23,9 +23,27 @@
                         <h2>빠르게 성장하는 개발자</h2>
                         <h3>뛰어난 적응력 빠른 습득력</h3><br>
                         <p>이끌어가는 힘이 있는 사람</p>
-                        <p>새로운 공부 혹은 환경을 접하는데 거부감이 없는 사람</p>
+                        <p>새로운 환경에서도 적응을 잘하는 사람</p>
                         <p>뒤쳐지는 것을 싫어하며 항상 앞에서 나아가려고 노력하는 개발자가 되겠습니다.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="single" style="margin-top: 5%;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="single_left" style="margin-top: 5%; text-align: left; margin-left: 20%;">
+                        <div class="single">
+                        <h2>배움의 재미를 아는 개발자</h2>
+                        <h3>항상 배우겠다는 자세로 임하는 사람</h3><br>
+                        <p>새로운 방법을 시도하는것에 두려움이 없는 사람</p>
+                        <p>경력없는 주니어 개발자이지만 열심히 하겠습니다.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <img src="@/img/study.jpeg" style="max-width: 100%; width: 35vw; height: 35vh; margin-bottom: 5%;"/>
+                    
                 </div>
             </div>
         </div>
@@ -222,7 +240,7 @@ a {
     align-items: center;
     vertical-align: bottom;
     width: 100%;
-    height: 400px;
+    height: 200px;
     background:url('@/img/banner.png') no-repeat top center;
     background-size: contain;
 }

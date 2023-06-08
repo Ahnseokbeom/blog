@@ -1,5 +1,4 @@
 <template>
-    <div class="app">
         <header id="main_menu" class="header navbar-fixed-top">
             <div class="main_menu_bg">
                 <div class="container">
@@ -8,9 +7,9 @@
                             <nav class="navbar navbar-default" id="navmenu">
                                 <div class="container-fluid">
                                     <div class="navbar-header">
-                                        <span class="title">SeokBeom Portfolio</span>
+                                        <a class="navbar-brand" id="title"><span>SeokBeom Portfolio</span></a>
                                     </div>
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <div class="collapse" id="bs-example-navbar-collapse-1" style="display: block!important;">
                                         <ul class="nav navbar-nav navbar-right">
                                             <li>About</li>
                                             <li>About</li>
@@ -26,8 +25,6 @@
                 </div>
             </div>
         </header>
-    </div>
-    
 </template>  
 <script>
 export default {
@@ -38,11 +35,11 @@ name: 'header'
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-.app{
+header{
     font-family: 'Jua',sans-serif;
 }
 .navbar-nav>li{
-    font-size: 200px;
+    font-size: 20px;
     float: left;
 }
 .main_menu{
@@ -52,7 +49,6 @@ name: 'header'
 }
 .main_menu_bg{
     margin-top: 0px;
-    background-color: #fff;
     border-bottom: 1px solid #FFC26F;
     height: 10vh;
     transition: all 0.3s;
@@ -62,10 +58,16 @@ name: 'header'
     margin-top: -2%;
     transition: all 0.6s;
 }
-.title{
+#title{
+    text-align: center;
     color: black;
-    font-size: 3rem;
-    margin-top: -50%;
+    font-size: 2rem;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 </style>
 
