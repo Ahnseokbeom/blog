@@ -5,17 +5,17 @@
                     <div class="row">
                         <div class="nave_menu">
                             <nav class="navbar navbar-default" id="navmenu">
-                                <div class="container-fluid">
+                                <div class="container-fluid" style="">
                                     <div class="navbar-header">
                                         <a class="navbar-brand" id="title"><span>SeokBeom Portfolio</span></a>
                                     </div>
-                                    <div class="collapse" id="bs-example-navbar-collapse-1" style="display: block!important;">
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li>About</li>
-                                            <li>About</li>
-                                            <li>About</li>
-                                            <li>About</li>
-                                            <li>About</li>
+                                    <div class="collapse.show" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav">
+                                            <a href="javascript:window.scrollTo(0,200);"><li>About</li></a>
+                                            <a href="javascript:window.scrollTo(0,1150);"><li>Archiving</li></a>
+                                            <a href="javascript:window.scrollTo(0,1850);"><li>Project</li></a>
+                                            <a href="javascript:window.scrollTo(0,2500);"><li>Education</li></a>
+                                            <a href="javascript:window.scrollTo(0,3000);"><li>Contact</li></a>
                                         </ul>
                                     </div>
                                 </div>
@@ -38,9 +38,13 @@ name: 'header'
 header{
     font-family: 'Jua',sans-serif;
 }
-.navbar-nav>li{
-    font-size: 20px;
-    float: left;
+li{
+    font-size: 1.3rem;
+    margin-right: 40px;
+}
+a {
+    text-decoration: none;
+    color : black;
 }
 .main_menu{
     position: fixed;
@@ -50,7 +54,7 @@ header{
 .main_menu_bg{
     margin-top: 0px;
     border-bottom: 1px solid #FFC26F;
-    height: 10vh;
+    height: 8vh;
     transition: all 0.3s;
 }
 .nave_menu{

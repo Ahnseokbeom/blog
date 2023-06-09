@@ -83,6 +83,29 @@
     </div>
     </div>
 </div>
+<div class="col-sm-12" style="margin-top: 1%;">
+        <div class="archiving_title"><span>Project</span></div>
+    </div>
+    <div class="about_main" style="background: #F9E0BB20;">
+        <div class="single">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="single_left">
+                        <img src="@/img/reader.jpeg" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-sm-push-1" style="text-align: left; margin-top: 1%;">
+                    <div class="single">
+                        <h2>빠르게 성장하는 개발자</h2>
+                        <h3>뛰어난 적응력 빠른 습득력</h3><br>
+                        <p>이끌어가는 힘이 있는 사람</p>
+                        <p>새로운 환경에서도 적응을 잘하는 사람</p>
+                        <p>뒤쳐지는 것을 싫어하며 항상 앞에서 나아가려고 노력하는 개발자가 되겠습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <div class="title"><span>Education</span><br/>
         <div class="left"><div class="edutitle">
                 금곡고등학교 졸업
@@ -106,7 +129,7 @@
         <!-- <div class="left" style="width: 20%;">
             <tr><img class="photo" src="@/img/photo.jpeg" /></tr>
         </div> -->
-        <div style="font-weight: 600; text-align: center;">
+        <div style="font-weight: 600; text-align: center; margin-left: 25%; margin-top: 3%;">
             <tr><span><icon type="mdi" :path="account"></icon> 이름 : 안석범</span></tr>
             <tr><span><icon type="mdi" :path="calendar"></icon> 생년월일 : 98.03.12</span></tr>
             <tr><span><icon type="mdi" :path="phone"></icon> 010-2374-0312</span></tr>
