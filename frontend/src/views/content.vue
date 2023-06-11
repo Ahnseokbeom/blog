@@ -1,16 +1,35 @@
 <template>
     <div class="app">     
-    <!-- <div class="banner" style="opacity: 95%;">
-        <div class="top">
-            <span>안녕하세요 개발자 안석범입니다</span>
-            <span>Welcome to My Portfolio</span>
-        </div>
-        
-    </div> -->
-    <div class="col-sm-12">
+        <header id="main_menu" class="header navbar-fixed-top">
+            <div class="main_menu_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="nave_menu">
+                            <nav class="navbar navbar-default" id="navmenu">
+                                <div class="container-fluid" style="">
+                                    <div class="navbar-header">
+                                        <a class="navbar-brand" id="title"><span>SeokBeom Portfolio</span></a>
+                                    </div>
+                                    <div class="collapse.show" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav">
+                                            <a href="#about"><li>About</li></a>
+                                            <a href="#archiving"><li>Archiving</li></a>
+                                            <a href="#project"><li>Project</li></a>
+                                            <a href="#education"><li>Education</li></a>
+                                            <a href="#contact"><li>Contact</li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <div class="col-sm-12" id="about">
         <div class="archiving_title"><span>About Me</span></div>
     </div>
-    <div class="about_main" style="background: #F9E0BB20;">
+    <div class="main" style="background: #F9E0BB20;">
         <div class="single">
             <div class="row">
                 <div class="col-sm-6">
@@ -49,7 +68,7 @@
         </div>
     </div>
     
-    <div class="archiving_title" style="margin-top: 1%;"><span>Archiving</span>  
+    <div class="archiving_title" style="margin-top: 1%;" id="archiving"><span>Archiving</span>  
         <div class="archiving_container">
         <div class="box">
             <div class="box_title">
@@ -57,7 +76,6 @@
         <span style="vertical-align: super; margin-left: 5%;">Github</span> </div>
         <div class="box_content">
             <a href="https://github.com/Ahnseokbeom" target="blank">github.com/Ahnseokbeom</a><br>소스 저장소입니다.
-            
             <ul style="list-style-type: disc;">
                 <li>
                     팀 프로젝트 / 개인 프로젝트
@@ -84,29 +102,53 @@
     </div>
 </div>
 <div class="col-sm-12" style="margin-top: 1%;">
-        <div class="archiving_title"><span>Project</span></div>
+        <div class="archiving_title" id="project"><span>Project</span></div>
     </div>
-    <div class="about_main" style="background: #F9E0BB20;">
-        <div class="single">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="single_left">
-                        <img src="@/img/reader.jpeg" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/>
+    <div class="main" style="background: #F9E0BB20;">
+        <div class="project_main">
+            <div class="project_title">게임 추천해주세요</div>
+            <div class="project_subtitle">2022.08(1인 개인 프로젝트)</div>
+            <div class="project_info">
+                <div class="project_img"><img src="@/img/project1.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
+                <div class="project_desc">
+                    <div class="project_desc_main"><b>안녕하세요 반갑습니다 하하하</b></div>
+                    <div class="project_desc_1" style="margin-bottom: 1rem;">
+                    <div class="project_label">메롱메롱</div> 
+                    <div class="project_value">푸하하하</div>
                     </div>
                 </div>
-                <div class="col-sm-5 col-sm-push-1" style="text-align: left; margin-top: 1%;">
-                    <div class="single">
-                        <h2>빠르게 성장하는 개발자</h2>
-                        <h3>뛰어난 적응력 빠른 습득력</h3><br>
-                        <p>이끌어가는 힘이 있는 사람</p>
-                        <p>새로운 환경에서도 적응을 잘하는 사람</p>
-                        <p>뒤쳐지는 것을 싫어하며 항상 앞에서 나아가려고 노력하는 개발자가 되겠습니다.</p>
+            </div>
+        </div>
+        <div class="project_main">
+            <div class="project_title">코딩테스트 문제 추천해주세요</div>
+            <div class="project_subtitle">2022.11(4인 개인 프로젝트)</div>
+            <div class="project_info">
+                <div class="project_img"><img src="@/img/project2.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
+                <div class="project_desc">
+                    <div class="project_desc_main"><b>안녕하세요 반갑습니다 하하하</b></div>
+                    <div class="project_desc_1" style="margin-bottom: 1rem;">
+                    <div class="project_label">메롱메롱</div> 
+                    <div class="project_value">푸하하하</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project_main">
+            <div class="project_title">개인 포트폴리오</div>
+            <div class="project_subtitle">2023.06(1인 개인 프로젝트)</div>
+            <div class="project_info">
+                <div class="project_img"><img src="@/img/project3.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
+                <div class="project_desc">
+                    <div class="project_desc_main"><b>안녕하세요 반갑습니다 하하하</b></div>
+                    <div class="project_desc_1" style="margin-bottom: 1rem;">
+                    <div class="project_label">메롱메롱</div> 
+                    <div class="project_value">푸하하하</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<div class="title"><span>Education</span><br/>
+<div class="title" style="margin-top: 1%;" id="education"><span>Education</span><br/>
         <div class="left"><div class="edutitle">
                 금곡고등학교 졸업
                 <div class="educontent">
@@ -125,7 +167,7 @@
             <img class="school" src="@/img/school.jpeg">
         </div>
     </div>
-    <div class="title"><span>Contact</span><br />
+    <div class="archiving_title" style="margin-top: 1%;" id="contact"><span>Contact</span><br />
         <!-- <div class="left" style="width: 20%;">
             <tr><img class="photo" src="@/img/photo.jpeg" /></tr>
         </div> -->
@@ -136,7 +178,7 @@
             <tr><span><icon type="mdi" :path="email"></icon> seokbeom0312@gmail.com</span></tr>
         </div>
     </div>
-    <div class="OnTop"><a href="javascript:window.scrollTo(0,0);"><icon type="mdi" :path="arrow" color="#884A39"></icon></a></div>
+    <div class="OnTop"><a href="javascript:window.scrollTo(0,0);"><icon type="mdi" :path="arrow" color="#884A39" size="50"></icon></a></div>
 </div>
 </template>  
 <script>
@@ -169,6 +211,71 @@ p {
     margin-bottom: 30px;
     font-size: 1.2rem;
 }
+.project_main{
+    width: 50%;
+    padding: 3rem;
+    margin: 0 auto 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
+    -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
+}
+.project_title{
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+}
+.project_subtitle{
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
+    opacity: .8;
+}
+.project_info{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+}
+.project_img{
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    margin-right: 3rem;
+}
+.project_desc{
+    width: -moz-calc(50% - 3rem);
+    width: calc(50% - 3rem);
+}
+.project_desc_title{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.project_label{
+    display: inline-block;
+    vertical-align: top;
+    width: 8.4rem;
+    font-weight: 900;
+    font-size: 1rem;
+}
+.project_value{
+    display: inline-block;
+    vertical-align: bottom;
+    width: -moz-calc(100% - 8.4rem);
+    width: calc(100% - 8.4rem);
+    font-weight: 400;
+    font-size: 1rem;
+}
 .hello {
     width: 115px;
     height: 49px;
@@ -181,9 +288,8 @@ p {
 }
 .OnTop {
     position: fixed;
-    right: 1%;
-    bottom: 2%;
-    font-size: 100px;
+    right: 0;
+    bottom: 1%;
 }
 .photo {
     width: 60%;
@@ -233,7 +339,8 @@ a {
     margin: 5rem;
     border-radius: 0.7rem;
     background-color: #fff;
-    box-shadow: 1rem 1rem 1rem 0 rgb(255 255 255 / 20%);
+    box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
+    -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
 }
 .box_title{
     padding-bottom: 0.5rem;
@@ -328,6 +435,41 @@ tr span{
 hr {
     margin-top: 2%;
     width:80%;
+}
+li{
+    font-size: 1.3rem;
+    margin-right: 40px;
+}
+a {
+    text-decoration: none;
+    color : black;
+}
+.main_menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.main_menu_bg{
+    margin-top: 0px;
+    border-bottom: 1px solid #FFC26F;
+    height: 8vh;
+    transition: all 0.3s;
+}
+.nave_menu{
+    margin-left: -12%;
+    margin-top: -2%;
+    transition: all 0.6s;
+}
+#title{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 </style>
   
