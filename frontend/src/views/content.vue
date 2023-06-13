@@ -1,12 +1,12 @@
 <template>
     <div class="app">     
-        <header id="main_menu" class="header navbar-fixed-top">
+        <header id="main_menu">
             <div class="main_menu_bg">
-                <div class="container">
+                <div class="container_box">
                     <div class="row">
                         <div class="nave_menu">
                             <nav class="navbar navbar-default" id="navmenu">
-                                <div class="container-fluid" style="">
+                                <div class="container-fluid">
                                     <div class="navbar-header">
                                         <a class="navbar-brand" id="title"><span>SeokBeom Portfolio</span></a>
                                     </div>
@@ -27,9 +27,9 @@
             </div>
         </header>
     <div class="col-sm-12" id="about">
-        <div class="archiving_title"><span>About Me</span></div>
+        <div class="container_title"><span>About Me</span></div>
     </div>
-    <div class="main" style="background: #F9E0BB20;">
+    <div style="background: #F9E0BB20;">
         <div class="single">
             <div class="row">
                 <div class="col-sm-6">
@@ -68,8 +68,8 @@
         </div>
     </div>
     
-    <div class="archiving_title" style="margin-top: 1%;" id="archiving"><span>Archiving</span>  
-        <div class="archiving_container">
+    <div class="container_title" style="margin-top: 1%;" id="archiving"><span>Archiving</span>  
+        <div class="container">
         <div class="box">
             <div class="box_title">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25657.png" height="40">
@@ -102,52 +102,86 @@
     </div>
 </div>
 <div class="col-sm-12" style="margin-top: 1%;">
-        <div class="archiving_title" id="project"><span>Project</span></div>
+        <div class="container_title" id="project"><span>Project</span></div>
     </div>
-    <div class="main" style="background: #F9E0BB20;">
+    <div style="background: #F9E0BB20;">
+    <div class="main" >
         <div class="project_main">
             <div class="project_title">게임 추천해주세요</div>
             <div class="project_subtitle">2022.08(1인 개인 프로젝트)</div>
             <div class="project_info">
                 <div class="project_img"><img src="@/img/project1.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
                 <div class="project_desc">
-                    <div class="project_desc_main"><b>안녕하세요 반갑습니다 하하하</b></div>
+                    <div class="project_desc_main"><b>온라인 게임을 추천해주는 웹사이트입니다.</b><br>
+                    취미 중 하나인 온라인 게임을 하던 중 다양한 게임을 하고 싶다는 생각에 개발하였습니다.<br><br>
+                    클라이언트는 Vue.js와 Vuetify를 통해서 구현하였고, 서버는 크롤링한 데이터를 Spring을 활용하여 MySQL에 적재한 값을 클라이언트에게 보내주는 형태로 구현하였습니다.</div>
                     <div class="project_desc_1" style="margin-bottom: 1rem;">
-                    <div class="project_label">메롱메롱</div> 
-                    <div class="project_value">푸하하하</div>
+                    <div class="project_label">주요 기능</div> 
+                    <div class="project_value">온라인 게임 랭킹 확인, 각 장르별 랭킹 확인, 게임별 추천 및 추천하기, 게시물 작성</div>
+                    <div class="project_label">Github</div> 
+                    <a href="https://github.com/Ahnseokbeom/DiconProject" target="blank"><div class="project_value">이동하기</div></a>
+                    <div class="project_label">Frontend</div> 
+                    <div class="project_value">Vue, Vuetify, JavaScript</div>
+                    <div class="project_label">Backend</div> 
+                    <div class="project_value">Spring</div>
+                    <div class="project_label">Database</div> 
+                    <div class="project_value">MySQL</div>
+                    <div class="project_label">Deployment</div> 
+                    <div class="project_value">netlify,AWS</div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="project_main">
-            <div class="project_title">코딩테스트 문제 추천해주세요</div>
+            <div class="project_title">코테 문제 추천해주세요</div>
             <div class="project_subtitle">2022.11(4인 개인 프로젝트)</div>
             <div class="project_info">
                 <div class="project_img"><img src="@/img/project2.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
                 <div class="project_desc">
-                    <div class="project_desc_main"><b>안녕하세요 반갑습니다 하하하</b></div>
+                    <div class="project_desc_main"><b>자신의 수준에 맞는 코딩테스트 문제를 추천해주는 웹사이트입니다.</b><br>
+                    팀 프로젝트로 코딩테스트를 준비하는 개발자들에게 도움이 되고자하는 마음에 Solve.ad에서 각자의 티어에 맞는 문제를 추천해주는 웹사이트를 개발하였습니다.<br><br>
+                    클라이언트 2인, 데이터베이스 1인, 서버 1인으로 구성된 4인 프로젝트입니다. 그 중 데이터베이스를 맡아서 Solve.ad에서 Java를 활용하여 크롤링한 데이터를
+                    MySQL에 적재하여 클라이언트 측으로 보내주는 역할을 하였습니다.<br>그렇게 완성된 웹사이트로 교내 경진대회에서 은상을 수상한 이력도 있습니다.
+                    </div>
                     <div class="project_desc_1" style="margin-bottom: 1rem;">
-                    <div class="project_label">메롱메롱</div> 
-                    <div class="project_value">푸하하하</div>
+                    <div class="project_label">주요 기능</div> 
+                    <div class="project_value">개인 수준에 맞는 문제 추천, 코테문제 과제 채점, 랜덤 문제 추천, 게시물 작성</div>
+                    <div class="project_label">Github</div> 
+                    <a href="https://github.com/Ahnseokbeom/SolvedSkhu" target="blank"><div class="project_value">이동하기</div></a>
+                    <div class="project_label">Frontend</div> 
+                    <div class="project_value">React,TypeScript</div>
+                    <div class="project_label">Backend</div> 
+                    <div class="project_value">Node.js</div>
+                    <div class="project_label">Database</div> 
+                    <div class="project_value">MySQL</div>
+                    <div class="project_label">Deployment</div> 
+                    <div class="project_value">AWS</div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="project_main">
-            <div class="project_title">개인 포트폴리오</div>
+        </div><div class="project_main">
+            <div class="project_title">포트폴리오</div>
             <div class="project_subtitle">2023.06(1인 개인 프로젝트)</div>
             <div class="project_info">
                 <div class="project_img"><img src="@/img/project3.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
                 <div class="project_desc">
-                    <div class="project_desc_main"><b>안녕하세요 반갑습니다 하하하</b></div>
+                    <div class="project_desc_main"><b>포트폴리오용 웹사이트입니다.</b><br>
+                    역량을 표현하기 위해서 포트폴리오용 웹사이트를 개발하였습니다.<br><br></div>
                     <div class="project_desc_1" style="margin-bottom: 1rem;">
-                    <div class="project_label">메롱메롱</div> 
-                    <div class="project_value">푸하하하</div>
+                    <div class="project_label">주요 기능</div> 
+                    <div class="project_value">온라인 게임 랭킹 확인, 각 장르별 랭킹 확인, 게임별 추천 및 추천하기, 게시물 작성</div>
+                    <div class="project_label">Github</div> 
+                    <a href="https://github.com/Ahnseokbeom/blog" target="blank"><div class="project_value">이동하기</div></a>
+                    <div class="project_label">Frontend</div> 
+                    <div class="project_value">Vue.js, Javascript</div>
+                    <div class="project_label">Deployment</div> 
+                    <div class="project_value">netlify</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <div class="title" style="margin-top: 1%;" id="education"><span>Education</span><br/>
         <div class="left"><div class="edutitle">
                 금곡고등학교 졸업
@@ -167,13 +201,10 @@
             <img class="school" src="@/img/school.jpeg">
         </div>
     </div>
-    <div class="archiving_title" style="margin-top: 1%;" id="contact"><span>Contact</span><br />
-        <!-- <div class="left" style="width: 20%;">
-            <tr><img class="photo" src="@/img/photo.jpeg" /></tr>
-        </div> -->
+    <div class="container_title" style="margin-top: 1%;" id="contact"><span>Contact</span><br />
         <div style="font-weight: 600; text-align: center; margin-left: 25%; margin-top: 3%;">
             <tr><span><icon type="mdi" :path="account"></icon> 이름 : 안석범</span></tr>
-            <tr><span><icon type="mdi" :path="calendar"></icon> 생년월일 : 98.03.12</span></tr>
+            <tr><span><icon type="mdi" :path="calendar"></icon> 생년월일 : 1998.03.12</span></tr>
             <tr><span><icon type="mdi" :path="phone"></icon> 010-2374-0312</span></tr>
             <tr><span><icon type="mdi" :path="email"></icon> seokbeom0312@gmail.com</span></tr>
         </div>
@@ -194,282 +225,24 @@ components: {Icon},
             calendar : mdiCalendarBlank,
             phone : mdiPhone,
             github : mdiGithub,
-            arrow : mdiArrowUpDropCircle
+            arrow : mdiArrowUpDropCircle,
+            scrollPosition: null
 		}
-	}
+	},
+    methods: {
+        updateScroll(){
+           this.scrollPosition = window.scrollY
+        }
+    },
+    mounted(){
+        window.addEventListener('scroll', this.updateScroll);
+    },
 }
 </script>
 
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-.app{
-    font-family: 'Jua',sans-serif;
-}
-p {
-    line-height: 1.375rem;
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-}
-.project_main{
-    width: 50%;
-    padding: 3rem;
-    margin: 0 auto 2rem;
-    border-radius: 1rem;
-    background-color: #fff;
-    box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
-    -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
-}
-.project_title{
-    padding-bottom: 0.5rem;
-    font-weight: 400;
-    font-size: 2.5rem;
-    color: #222;
-    text-align: center;
-}
-.project_subtitle{
-    margin-bottom: 2rem;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #6c757d;
-    text-align: center;
-    opacity: .8;
-}
-.project_info{
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-pack: center;
-}
-.project_img{
-    overflow: hidden;
-    position: relative;
-    width: 50%;
-    margin-right: 3rem;
-}
-.project_desc{
-    width: -moz-calc(50% - 3rem);
-    width: calc(50% - 3rem);
-}
-.project_desc_title{
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
-    font-weight: 400;
-    font-size: 1rem;
-}
-.project_label{
-    display: inline-block;
-    vertical-align: top;
-    width: 8.4rem;
-    font-weight: 900;
-    font-size: 1rem;
-}
-.project_value{
-    display: inline-block;
-    vertical-align: bottom;
-    width: -moz-calc(100% - 8.4rem);
-    width: calc(100% - 8.4rem);
-    font-weight: 400;
-    font-size: 1rem;
-}
-.hello {
-    width: 115px;
-    height: 49px;
-    position: relative;
-    box-sizing: border-box;
-    overflow: visible;
-    visibility: inherit;
-    display: inline-block;
-    list-style-type: none;
-}
-.OnTop {
-    position: fixed;
-    right: 0;
-    bottom: 1%;
-}
-.photo {
-    width: 60%;
-    height: 60%;
-    margin-left: 23vw;
-}
-a {
-    text-decoration: none;
-}
-.about_box { 
-    text-align: left;   
-    width: 40rem;
-    height: 25rem;
-    margin: 2rem;
-}
-.about_box_1{
-    width: 40rem;
-    height: 25rem;
-    background-image: url(@/img/school.jpeg);
-}
-.about_box_2{
-    width: 40rem;
-    height: 25rem;
-    background-image: url(@/img/photo.jpeg);
-}
-.archiving_title {
-    color: #C38154;
-    background: #F9E0BB20;
-    padding: 45px 0 30px 0;
-    font-weight: 200;
-    font-size: 3rem;
-    text-align: center;
-    word-break: kiip-all;
-    border-bottom: 0.01rem solid #fff;
-}
-.archiving_container{
-    display: flex;
-    flex-flow: column wrap;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.box {
-    flex-shrink: 0;
-    width: 30rem;
-    padding: 1.5rem;
-    margin: 5rem;
-    border-radius: 0.7rem;
-    background-color: #fff;
-    box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
-    -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
-}
-.box_title{
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid #ccc;
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: #56585C;
-}
-.box_content{
-    color : black;
-    font-size: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-}
-.box_content li{
-    float: left;
-    list-style-position: inside;
-    text-indent: -20px;
-    padding-left: 20px;
-}
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: bottom;
-    width: 100%;
-    height: 200px;
-    background:url('@/img/banner.png') no-repeat top center;
-    background-size: contain;
-}
-.top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-size: 3rem;
-    opacity: 80%;
-}
-.menu{
-    position: absolute;
-    margin: -5% 0 -30% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 8%;
-    background: #FFC26F;
-    color: white;
-}
-.menu .nav{
-    font-size: 1.5vw;
-    word-spacing: 5em;
-}
-.left{
-    float: left;
-    width: 50%;
-}
-.right{
-    float: right;
-    width: 50%;
-}
-.edutitle{
-    background: none;
-    color : black;
-    font-size: 1.5rem;
-    margin-top: 3%;
-}
-.educontent{
-    font-size: 1rem;
-}
-tr span{
-    margin : 2vw 0 0 20vw;
-    font-size: 1.3vw;
-    float: left;
-}
-.title {
-    font-size: 3rem;
-    margin-top: 1%;
-    width: 100%;
-    height: 60vh;
-    color : #C38154;
-    background: #F9E0BB20;
-    padding: 45px 0 30px 0;
-}
-.school{
-    width: 60%;
-    height: 40vh;
-}
-hr {
-    margin-top: 2%;
-    width:80%;
-}
-li{
-    font-size: 1.3rem;
-    margin-right: 40px;
-}
-a {
-    text-decoration: none;
-    color : black;
-}
-.main_menu{
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-.main_menu_bg{
-    margin-top: 0px;
-    border-bottom: 1px solid #FFC26F;
-    height: 8vh;
-    transition: all 0.3s;
-}
-.nave_menu{
-    margin-left: -12%;
-    margin-top: -2%;
-    transition: all 0.6s;
-}
-#title{
-    text-align: center;
-    color: black;
-    font-size: 2rem;
-}
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
+@import '@/css/pp.css'
 </style>
   
