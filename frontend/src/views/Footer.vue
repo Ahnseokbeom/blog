@@ -1,25 +1,18 @@
 <template>
     <div class="footer">
         <div>
-        <span><a href="https://github.com/ahnseokbeom" target="blank"><icon type="mdi" :path="github" color="white"></icon></a></span>
+        <span><a href="https://github.com/ahnseokbeom" target="blank"><img class="github" src="@/img/github.png" ></a></span>
+        <span><a href="https://beom-growth.tistory.com/" target="blank"><img class="tistory" src="@/img/tistory.png" ></a></span><br/>
         <span>{{today}}. SeokBeom All Rights Reserved</span>
         </div>
     </div>
 </template>  
 <script>
-import Icon from '@jamescoyle/vue-icon'
-import {mdiGithub,mdiAccount, mdiEmailOutline, mdiCalendarBlank, mdiPhone} from '@mdi/js'
 export default {
 name: 'footer',
-components : {Icon},
     data(){
         var today = new Date().getFullYear();
         return{
-            account: mdiAccount,
-            email : mdiEmailOutline,
-            calendar : mdiCalendarBlank,
-            phone : mdiPhone,
-            github : mdiGithub,
             today
         }
     }
@@ -43,6 +36,14 @@ components : {Icon},
 a{
     color : none;
     cursor: pointer;
+}
+.github{
+    width: 50px;
+    height: 50px;
+}
+.tistory{
+    width: 50px;
+    height: 50px;
 }
 
 </style>

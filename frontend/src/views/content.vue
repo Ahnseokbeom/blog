@@ -214,7 +214,7 @@
 </template>  
 <script>
 import Icon from '@jamescoyle/vue-icon'
-import { mdiAccount, mdiEmailOutline, mdiCalendarBlank, mdiPhone, mdiGithub, mdiArrowUpDropCircle} from '@mdi/js'
+import { mdiAccount, mdiEmailOutline, mdiCalendarBlank, mdiPhone, mdiArrowUpDropCircle} from '@mdi/js'
 export default {
 name: 'Content',
 components: {Icon},
@@ -224,7 +224,6 @@ components: {Icon},
             email : mdiEmailOutline,
             calendar : mdiCalendarBlank,
             phone : mdiPhone,
-            github : mdiGithub,
             arrow : mdiArrowUpDropCircle,
             scrollPosition: null
 		}
@@ -243,6 +242,6 @@ components: {Icon},
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-@import '@/css/pp.css'
+@import '@/css/style.css'
 </style>
   
