@@ -38,12 +38,12 @@ a{
     cursor: pointer;
 }
 .github{
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
 }
 .tistory{
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
 }
 
 </style>
