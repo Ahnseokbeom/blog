@@ -1,8 +1,9 @@
 <template>
     <div class="footer">
         <div>
-        <span><a href="https://github.com/ahnseokbeom" target="blank"><img class="github" src="@/img/github.png" ></a></span>
-        <span><a href="https://beom-growth.tistory.com/" target="blank"><img class="tistory" src="@/img/tistory.png" ></a></span><br/>
+        <span><a href="https://github.com/ahnseokbeom" target="blank"><img class="github" src="@/img/github2.png" ></a></span>
+        &nbsp;
+        <span><a href="https://beom-growth.tistory.com/" target="blank"><img class="tistory" src="@/img/tistory2.png" ></a></span><br/>
         <span>{{today}}. SeokBeom All Rights Reserved</span>
         </div>
     </div>
