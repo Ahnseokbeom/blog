@@ -88,23 +88,22 @@
             </ul>
         </div>
     </div>
-    <div class="box">
+        <div class="box">
             <div class="box_title">
             <img src="https://cdn-icons-png.flaticon.com/512/3959/3959542.png" height="40">
-        <span style="vertical-align: super; margin-left: 5%; ">Portfolio</span> </div>
+        <span style="vertical-align: super; margin-left: 5%; ">Blog</span> </div>
         <div class="box_content">
-            <a href="https://github.com/Ahnseokbeom/blog" target="blank">Portfolio</a><br>포트폴리오용 웹사이트입니다.
+            <a href="https://beom-growth.tistory.com/" target="blank">Blog</a><br>성장을 위한 블로그입니다.<br>
             <ul style="list-style-type: disc;">
-            </ul>
-        </div>
-    </div>
-    <div class="box">
-            <div class="box_title">
-            <img src="https://cdn-icons-png.flaticon.com/512/3959/3959542.png" height="40">
-        <span style="vertical-align: super; margin-left: 5%; ">Portfolio</span> </div>
-        <div class="box_content">
-            <a href="https://github.com/Ahnseokbeom/blog" target="blank">Portfolio</a><br>포트폴리오용 웹사이트입니다.
-            <ul style="list-style-type: disc;">
+                <li>
+                    성장을 위한 발판
+                </li><br>
+                <li>
+                    코딩테스트 연습
+                </li><br>
+                <li>
+                    MySQL 쿼리 연습
+                </li>
             </ul>
         </div>
     </div>
@@ -116,7 +115,9 @@
     <div style="background: #F9E0BB20;">
     <div class="main" >
         <div class="project_main">
-            <div class="project_title">게임 추천해주세요</div>
+        <a href="https://github.com/Ahnseokbeom/DiconProject" target="blank"> 
+            <div class="project_title">게임 추천 웹사이트</div>
+        </a>
             <div class="project_subtitle">2022.08(1인 개인 프로젝트)</div>
             <div class="project_info">
                 <div class="project_img"><img src="@/img/project1.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
@@ -130,9 +131,9 @@
                     <div class="project_label">Github</div> 
                     <a href="https://github.com/Ahnseokbeom/DiconProject" target="blank"><div class="project_value">이동하기</div></a>
                     <div class="project_label">Frontend</div> 
-                    <div class="project_value">Vue, Vuetify, JavaScript</div>
+                    <div class="project_value">Vue.js, JavaScript</div>
                     <div class="project_label">Backend</div> 
-                    <div class="project_value">Spring</div>
+                    <div class="project_value">Spring, Spring Data JPA</div>
                     <div class="project_label">Database</div> 
                     <div class="project_value">MySQL</div>
                     <div class="project_label">Deployment</div> 
@@ -142,7 +143,9 @@
             </div>
         </div>
         <div class="project_main">
-            <div class="project_title">코테 문제 추천해주세요</div>
+            <a href="https://github.com/Ahnseokbeom/SolvedSkhu" target="blank">  
+            <div class="project_title">알고리즘 문제 추천 솔루션 웹사이트</div>
+            </a>
             <div class="project_subtitle">2022.11(4인 개인 프로젝트)</div>
             <div class="project_info">
                 <div class="project_img"><img src="@/img/project2.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
@@ -158,33 +161,13 @@
                     <div class="project_label">Github</div> 
                     <a href="https://github.com/Ahnseokbeom/SolvedSkhu" target="blank"><div class="project_value">이동하기</div></a>
                     <div class="project_label">Frontend</div> 
-                    <div class="project_value">React,TypeScript</div>
+                    <div class="project_value">React,JavaScript</div>
                     <div class="project_label">Backend</div> 
-                    <div class="project_value">Node.js</div>
+                    <div class="project_value">Java, Node.js</div>
                     <div class="project_label">Database</div> 
                     <div class="project_value">MySQL</div>
                     <div class="project_label">Deployment</div> 
-                    <div class="project_value">AWS</div>
-                    </div>
-                </div>
-            </div>
-        </div><div class="project_main">
-            <div class="project_title">포트폴리오</div>
-            <div class="project_subtitle">2023.06(1인 개인 프로젝트)</div>
-            <div class="project_info">
-                <div class="project_img"><img src="@/img/project3.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
-                <div class="project_desc">
-                    <div class="project_desc_main"><b>포트폴리오용 웹사이트입니다.</b><br>
-                    역량을 표현하기 위해서 포트폴리오용 웹사이트를 개발하였습니다.<br><br></div>
-                    <div class="project_desc_1" style="margin-bottom: 1rem;">
-                    <div class="project_label">주요 기능</div> 
-                    <div class="project_value">온라인 게임 랭킹 확인, 각 장르별 랭킹 확인, 게임별 추천 및 추천하기, 게시물 작성</div>
-                    <div class="project_label">Github</div> 
-                    <a href="https://github.com/Ahnseokbeom/blog" target="blank"><div class="project_value">이동하기</div></a>
-                    <div class="project_label">Frontend</div> 
-                    <div class="project_value">Vue.js, Javascript</div>
-                    <div class="project_label">Deployment</div> 
-                    <div class="project_value">netlify</div>
+                    <div class="project_value">Oracle Cloud</div>
                     </div>
                 </div>
             </div>
