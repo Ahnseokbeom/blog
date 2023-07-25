@@ -62,7 +62,6 @@
                 </div>
                 <div class="col-sm-5">
                     <img src="@/img/study.jpeg" style="max-width: 100%; width: 35vw; height: 35vh; margin-bottom: 5%;"/>
-                    
                 </div>
             </div>
         </div>
@@ -86,6 +85,16 @@
                 <li>
                     코딩테스트 연습
                 </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+            <div class="box_title">
+            <img src="https://cdn-icons-png.flaticon.com/512/3959/3959542.png" height="40">
+        <span style="vertical-align: super; margin-left: 5%; ">Portfolio</span> </div>
+        <div class="box_content">
+            <a href="https://github.com/Ahnseokbeom/blog" target="blank">Portfolio</a><br>포트폴리오용 웹사이트입니다.
+            <ul style="list-style-type: disc;">
             </ul>
         </div>
     </div>
@@ -227,15 +236,7 @@ components: {Icon},
             arrow : mdiArrowUpDropCircle,
             scrollPosition: null
 		}
-	},
-    methods: {
-        updateScroll(){
-           this.scrollPosition = window.scrollY
-        }
-    },
-    mounted(){
-        window.addEventListener('scroll', this.updateScroll);
-    },
+	}
 }
 </script>
 
