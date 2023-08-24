@@ -173,7 +173,7 @@
             </div>
         </div>
         <div class="project_main">
-        <a href="https://github.com/Ahnseokbeom/Board" target="blank"> 
+        <a href="https://github.com/Ahnseokbeom/blog" target="blank"> 
             <div class="project_title">게시판</div>
         </a>
             <div class="project_subtitle">2023.07(1인 개인 프로젝트)</div>
@@ -187,7 +187,7 @@
                     <div class="project_label">주요 기능</div> 
                     <div class="project_value">게시판 CRUD, Pagination</div>
                     <div class="project_label">Github</div> 
-                    <a href="https://github.com/Ahnseokbeom/Board" target="blank"><div class="project_value">이동하기</div></a>
+                    <a href="https://github.com/Ahnseokbeom/blog" target="blank"><div class="project_value">이동하기</div></a>
                     <div class="project_label">Frontend</div> 
                     <div class="project_value">HTML, Thymeleaf</div>
                     <div class="project_label">Backend</div> 
