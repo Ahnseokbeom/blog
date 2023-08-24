@@ -137,7 +137,7 @@
                     <div class="project_label">Database</div> 
                     <div class="project_value">MySQL</div>
                     <div class="project_label">Deployment</div> 
-                    <div class="project_value">netlify,AWS</div>
+                    <div class="project_value">netlify</div>
                     </div>
                 </div>
             </div>
@@ -168,6 +168,32 @@
                     <div class="project_value">MySQL</div>
                     <div class="project_label">Deployment</div> 
                     <div class="project_value">Oracle Cloud</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project_main">
+        <a href="https://github.com/Ahnseokbeom/Board" target="blank"> 
+            <div class="project_title">게시판</div>
+        </a>
+            <div class="project_subtitle">2023.07(1인 개인 프로젝트)</div>
+            <div class="project_info">
+                <div class="project_img"><img src="@/img/board_main.png" style="max-width: 100%; width: 25vw; height: 50vh; margin-bottom: 5%;"/></div>
+                <div class="project_desc">
+                    <div class="project_desc_main"><b>게시판</b><br>
+                    간단한 CRUD를 구현한 게시판입니다.<br><br>
+                    클라이언트는 HTML과 Thymeleaf를 활용하여 UI를 구현하였고, 서버는 Spring Data JPA와 Mapper를 활용하여서 구성하였습니다.</div>
+                    <div class="project_desc_1" style="margin-bottom: 1rem;">
+                    <div class="project_label">주요 기능</div> 
+                    <div class="project_value">게시판 CRUD, Pagination</div>
+                    <div class="project_label">Github</div> 
+                    <a href="https://github.com/Ahnseokbeom/Board" target="blank"><div class="project_value">이동하기</div></a>
+                    <div class="project_label">Frontend</div> 
+                    <div class="project_value">HTML, Thymeleaf</div>
+                    <div class="project_label">Backend</div> 
+                    <div class="project_value">Spring, Spring Data JPA</div>
+                    <div class="project_label">Database</div> 
+                    <div class="project_value">MySQL</div>
                     </div>
                 </div>
             </div>
